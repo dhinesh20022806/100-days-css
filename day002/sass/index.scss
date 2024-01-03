@@ -1,0 +1,26 @@
+// variables
+@import './variables/variable';
+
+@import './layout/layout';
+
+// colors
+@import './colors/color';
+
+// components
+@import './components/mainMenu';
+@import './components/line';
+
+// animations
+@import './animations/animation';
+
+@import './animations/animationRev';
+
+
+
+.frame {
+  width: $frameWidth;
+  height: $frameHeight;
+  background-color: $frameBackgroundColor;
+  color: $frameColor;
+}
+

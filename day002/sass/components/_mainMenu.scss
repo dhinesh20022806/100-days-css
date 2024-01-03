@@ -1,0 +1,40 @@
+
+.menu-icon{
+    width: $menuIconWidth;
+    height: $menuIconHeight;
+    display:flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-around;
+
+     .line-1{
+            animation: animate-rev-line-1 .7s ease-in-out forwards;
+        }
+        .line-2{
+            animation: animate-rev-line-2 .7s ease-in-out forwards;
+        }
+        .line-3{
+            animation: animate-rev-line-3 .7s ease-in-out forwards;
+        }
+
+    &.active{
+        .line-1,.line-2,.line-3{
+            background-color: #fff;
+
+        }
+        // here Iam not use cubic-bezier
+        .line-1{
+            animation: animate-line-1 .7s ease-in-out forwards;
+        }
+        .line-2{
+            animation: animate-line-2 .7s ease-in-out forwards;
+        }
+        .line-3{
+            animation: animate-line-3 .7s ease-in-out forwards;
+        }
+
+       
+    }
+
+}
+ 

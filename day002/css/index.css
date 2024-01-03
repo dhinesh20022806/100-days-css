@@ -1,0 +1,125 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100svh;
+}
+
+.frame {
+  display: grid;
+  place-items: center;
+}
+
+.center {
+  width: 80px;
+  height: 75px;
+}
+
+.menu-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.menu-icon .line-1 {
+  animation: animate-rev-line-1 0.7s ease-in-out forwards;
+}
+.menu-icon .line-2 {
+  animation: animate-rev-line-2 0.7s ease-in-out forwards;
+}
+.menu-icon .line-3 {
+  animation: animate-rev-line-3 0.7s ease-in-out forwards;
+}
+.menu-icon.active .line-1, .menu-icon.active .line-2, .menu-icon.active .line-3 {
+  background-color: #fff;
+}
+.menu-icon.active .line-1 {
+  animation: animate-line-1 0.7s ease-in-out forwards;
+}
+.menu-icon.active .line-2 {
+  animation: animate-line-2 0.7s ease-in-out forwards;
+}
+.menu-icon.active .line-3 {
+  animation: animate-line-3 0.7s ease-in-out forwards;
+}
+
+.line-1, .line-2, .line-3 {
+  height: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.no-animations {
+  animation: none !important;
+}
+
+@keyframes animate-line-1 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0);
+  }
+  50% {
+    transform: translate3d(0, 25px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, 25px, 0) rotate(45deg);
+  }
+}
+@keyframes animate-line-2 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes animate-line-3 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -25px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, -25px, 0) rotate(135deg);
+  }
+}
+@keyframes animate-rev-line-1 {
+  0% {
+    transform: translate3d(0, 25px, 0) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(0, 25px, 0) rotate(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0);
+  }
+}
+@keyframes animate-rev-line-2 {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes animate-rev-line-3 {
+  0% {
+    transform: translate3d(0, -25px, 0) rotate(135deg);
+  }
+  50% {
+    transform: translate3d(0, -25px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+.frame {
+  width: 400px;
+  height: 400px;
+  background-color: #3faf82;
+  color: #fff;
+}

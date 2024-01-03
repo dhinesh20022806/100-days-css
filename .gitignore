@@ -1,6 +1,12 @@
 # ignore All .log files
 *.log
+.gitignore
+.prettierrc
+package-lock.json
+gulpfile.js
 
-ignore All files in ANY directory named temp
+ignore All files in ANY directory named temp , node_modules
 
 temp/
+
+node_modules/

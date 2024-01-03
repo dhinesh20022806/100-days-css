@@ -1,0 +1,18 @@
+body{
+    display: grid;
+    place-items: center;
+    height: $bodyHeightSVH;
+}
+
+.frame{
+    // background-color: aqua;
+    // width: 100px;
+    // height: 100px;
+    display:grid;
+    place-items: center;
+}
+.center{
+    // background-color: aqua;
+    width: $centerWidth;
+    height: $centerHeight;
+}
