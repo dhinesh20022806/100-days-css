@@ -7,7 +7,7 @@ gulpfile.js
 
 ignore All files in ANY directory named temp , node_modules
 
-my-own-style/
+my-own-style/sass/
 
 temp/
 
